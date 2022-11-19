@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --primary-clr: #0B0D17;
     --secondary-clr: #D0D6F9;
