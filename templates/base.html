@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel='stylesheet' href="{% static 'css/base.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% get_media_prefix %}favicon-32x32.png">
+    <script src="{% static 'js/base.js' %}"></script>
     {% block headextra %}
     {% endblock headextra %}
 </head>
@@ -18,7 +19,7 @@
         </div>
         <div class="seperator"></div>
         <div class="container">
-            <a class="nav-item enabled">
+            <a class="nav-item">
                 <span class="num">00</span>
                 <span class="text">home</span>
                 <div class="bottom-bar"></div>
@@ -42,5 +43,7 @@
     </nav>
     {% block body %}
     {% endblock body %}
+    {% block script %}
+    {% endblock script %}
 </body>
 </html>
