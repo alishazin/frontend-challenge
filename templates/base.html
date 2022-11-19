@@ -12,6 +12,34 @@
     {% endblock headextra %}
 </head>
 <body>
+    <nav>
+        <div class="icon">
+            <img src="/media/shared/logo.svg">
+        </div>
+        <div class="seperator"></div>
+        <div class="container">
+            <a class="nav-item enabled">
+                <span class="num">00</span>
+                <span class="text">home</span>
+                <div class="bottom-bar"></div>
+            </a>
+            <a class="nav-item" href="google.com">
+                <span class="num">01</span>
+                <span class="text">destination</span>
+                <div class="bottom-bar"></div>
+            </a>
+            <a class="nav-item">
+                <span class="num">02</span>
+                <span class="text">crew</span>
+                <div class="bottom-bar"></div>
+            </a>
+            <a class="nav-item">
+                <span class="num">03</span>
+                <span class="text">technology</span>
+                <div class="bottom-bar"></div>
+            </a>
+        </div>
+    </nav>
     {% block body %}
     {% endblock body %}
 </body>
