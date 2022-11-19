@@ -56,7 +56,7 @@ nav > div.container > a.nav-item > span.num {
     font-family: "Barlow Condensed", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: white;
+    color: var(--tertiary-clr);
     letter-spacing: 2.7px;
 }
 nav > div.container > a.nav-item > span.text {
@@ -64,7 +64,7 @@ nav > div.container > a.nav-item > span.text {
     font-family: "Barlow Condensed", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: white;
+    color: var(--tertiary-clr);
     letter-spacing: 2.7px;
 }
 nav > div.container > a.nav-item > div.bottom-bar {
@@ -81,5 +81,5 @@ nav > div.container > a.nav-item:not(.enabled):hover > div.bottom-bar {
     background-color: rgb(255, 255, 255, 0.5);
 }
 nav > div.container > a.nav-item.enabled > div.bottom-bar {
-    background-color: white;
+    background-color: var(--tertiary-clr);
 }

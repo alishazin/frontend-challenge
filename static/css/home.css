@@ -5,3 +5,46 @@ body {
     background-size: cover;
     background-position-x: 100%;
 }
+div.content {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+}
+div.content > main {
+    width: 500px;
+    height: fit-content;
+}
+div.content > a {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+}
+div.content > main > h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Barlow Condensed", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--secondary-clr);
+}
+div.content > main > h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Bellefair", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    color: var(--tertiary-clr);
+    margin: 15px 0;
+}
+div.content > main > p {
+    margin: 0;
+    font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--secondary-clr);
+    line-height: 32px;
+}
