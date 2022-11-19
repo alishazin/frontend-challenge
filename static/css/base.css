@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-clr: #0B0D17;
+    --secondary-clr: #D0D6F9;
+    --tertiary-clr: #FFFFFF;
+}
