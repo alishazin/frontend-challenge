@@ -83,3 +83,28 @@ nav > div.container > a.nav-item:not(.enabled):hover > div.bottom-bar {
 nav > div.container > a.nav-item.enabled > div.bottom-bar {
     background-color: var(--tertiary-clr);
 }
+@media (max-width:1000px) {
+    nav {
+        height: 80px;
+    }
+    nav > div.seperator {
+        display: none;
+    }
+    nav > div.icon {
+        width: 100px;
+    }
+    nav > div.container {
+        width: 500px;
+        margin-left: auto;
+        padding-left: 50px;
+    }
+    nav > div.container > a.nav-item {
+        margin-right: 40px;
+    }
+    nav > div.container > a.nav-item > span.num {
+        display: none;
+    }
+    nav > div.container > a.nav-item > span.text {
+        font-size: 14px;
+    }
+}
