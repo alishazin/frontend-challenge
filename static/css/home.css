@@ -4,6 +4,7 @@ body {
     background-image: url("/media/home/background-home-desktop.jpg");
     background-size: cover;
     background-position-x: 100%;
+    background-repeat: no-repeat;
 }
 div.content {
     width: 100%;
@@ -13,8 +14,9 @@ div.content {
     align-items: center;
 }
 div.content > main {
-    width: 500px;
+    max-width: 500px;
     height: fit-content;
+    padding: 0 15px;
 }
 div.content > main > h2 {
     text-transform: uppercase;
@@ -106,5 +108,44 @@ div.content > a.button:hover > div.inner {
     }
     div.content > a.button:hover > div.inner {
         transform: scale(1.3);
+    }
+    div.content > a.button {
+        width: 240px;
+        height: 240px;
+    }
+    div.content > a.button > div.inner {
+        position: absolute;
+        border-radius: 50%;
+        left: calc(50% - 120px);
+        top: calc(50% - 120px);
+    }
+}
+@media (max-width:600px) {
+    body {
+        background-image: url("/media/home/background-home-mobile.jpg");
+    }
+    div.content > main > h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    div.content > main > p {
+        font-size: 15px;
+    }
+    div.content > main > h1 {
+        font-size: 80px;
+    }
+    div.content > a.button:hover > div.inner {
+        transform: scale(1.3);
+    }
+    div.content > a.button {
+        width: 150px;
+        height: 150px;
+    }
+    div.content > a.button > div.inner {
+        left: calc(50% - 75px);
+        top: calc(50% - 75px);
+    }
+    div.content > a.button > div.outer {
+        font-size: 20px;
     }
 }
