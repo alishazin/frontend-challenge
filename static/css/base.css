@@ -4,7 +4,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 :root {
     --primary-clr: #0B0D17;
@@ -163,6 +162,7 @@ nav > div.mobile-nav-button.open {
         padding-left: 0;
         justify-content: flex-start;
         overflow: auto;
+        overflow: hidden;
     }
     nav > div.container > a.nav-item > span.num {
         display: block;
