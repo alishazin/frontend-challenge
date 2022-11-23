@@ -82,6 +82,9 @@ div.content > a.button:hover > div.inner {
     transform: scale(1.5);
 }
 @media (max-width:1000px) {
+    div.content {
+        min-height: calc(100vh - 80px);
+    }
     body {
         background-image: url("/media/home/background-home-tablet.jpg");
     }

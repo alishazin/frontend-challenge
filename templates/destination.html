@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block headextra %}
+<link rel='stylesheet' href="{% static 'css/destination.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+<script src="{% static 'js/destination.js' %}"></script>
+{% endblock headextra %}
+
+{% block body %}
+<main>
+    <div class="left-box">
+        <h2><span>01</span> pick your destination</h2>
+        <div class="planet-img"></div>
+    </div>
+    <div class="right-box">
+        <div class="sec-nav">
+            <div id="moon" class="nav-item">
+                <span>moon</span>
+                <div class="bottom-bar"></div>
+            </div>
+            <div id="mars" class="nav-item">
+                <span>mars</span>
+                <div class="bottom-bar"></div>
+            </div>
+            <div id="europa" class="nav-item">
+                <span>europa</span>
+                <div class="bottom-bar"></div>
+            </div>
+            <div id="titan" class="nav-item">
+                <span>titan</span>
+                <div class="bottom-bar"></div>
+            </div>
+        </div>
+        <h1></h1>
+        <p></p>
+        <div class="separator"></div>
+        <div class="extra-details">
+            <div class="detail-box">
+                <div class="key">avg. distance</div>
+                <div class="value" id="avgDistance"></div>
+            </div>
+            <div class="detail-box">
+                <div class="key">est. time travel</div>
+                <div class="value" id="estTime"></div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock body %}
+
+{% block script %}
+<script>
+    setNavEnabled(1)
+    onDestinationLoad()
+</script>
+{% endblock script %}

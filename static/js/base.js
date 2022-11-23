@@ -10,7 +10,6 @@ function setNavEnabled(index) {
 }
 
 function initializeNavButton() {
-    console.log(100)
     secondaryNavObject = {
         button : document.querySelector('nav > div.mobile-nav-button'),
         navBox : document.querySelector('nav > div.container'),
