@@ -55,6 +55,7 @@ main > div.left-box > div.planet-img {
     /* border-radius: 50%; */
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity 0.5s, transform 0.5s;
 }
 main > div.right-box > div.sec-nav {
     width: fit-content;

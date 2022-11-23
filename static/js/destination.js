@@ -16,7 +16,13 @@ function onDestinationLoad() {
             this.p.innerText = currentData.content
             this.avgDistanceDiv.innerText = currentData.avg_distance
             this.estTimeDiv.innerText = currentData.travel_time
-            this.imageDiv.style.backgroundImage = `url("${currentData.img}")`;
+            this.imageDiv.style.opacity = 0;
+            this.imageDiv.style.transform = 'translateX(30px) translateY(-30px)';
+            setTimeout(() => {
+                this.imageDiv.style.backgroundImage = `url("${currentData.img}")`;
+                this.imageDiv.style.opacity = 1;
+                this.imageDiv.style.transform = 'translateX(0px)';
+            }, 500)
         },
         changePlanet : function(id) {
             const navBars = Array.from(document.querySelectorAll("main > div.right-box > div.sec-nav > div.nav-item"))
@@ -26,7 +32,6 @@ function onDestinationLoad() {
                     element.classList += ' enabled'
                     this.display(id)
                 } else {
-                    // console.log(i, id - 1)
                     element.classList = 'nav-item'
                 }
                 i++;
